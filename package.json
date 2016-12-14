@@ -1,12 +1,3 @@
-# express
-
-* git clone https://github.com/shuoshubao/express.git
-* cd express
-* npm i
-* npm start
-* http://localhost:3000/
-
-```javascript
 {
   "name": "express",
   "version": "0.0.0",
@@ -25,4 +16,3 @@
     "serve-favicon": "~2.3.0"
   }
 }
-```

@@ -1,0 +1,20 @@
+<% include ../layout/head %>
+
+<ul>
+  <% for (var k in info) { %>
+    <% var item = info[k]; %>
+    <li>
+      <span><%= k %></span>
+      <span>:</span>
+      <span><%= item %></span>
+    </li>
+  <% } %>
+</ul>
+
+<script>
+
+var x = <%= info %>
+
+</script>
+
+<% include ../layout/footer %>

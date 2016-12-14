@@ -1,0 +1,67 @@
+.ui-dialog {
+  position: fixed;
+  z-index: @zIndex-base;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .4);
+  line-height: 20px;
+  color: #333;
+  &.ui-modal .box {
+    width: 600px;
+  }
+  &.ui-alert .box {
+    width: 400px;
+  }
+  .box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  }
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .hd {
+    padding: 9px 10px 10px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .bd {
+    padding: 20px 10px;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  .ft {
+    padding: 4px 10px 5px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    &:empty {
+      .hide;
+    }
+    button {
+      margin-left: 10px;
+      padding: 0 10px;
+      border: 1px solid  #ccc;
+      background-color: #fafafc;
+      &:first-child {
+        margin-left: 0;
+        color: #fff;
+        background-color: #bbb;
+        border-color: #bbb;
+  }
+    }
+  }
+}
