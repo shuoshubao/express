@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>USERS</title>
-</head>
-<body>
+<% include ../layout/head %>
 
-<h1>users.ejs</h1>
+<ul>
+  <% for(var i=0;i<100;i++) { %>
+    <li><%= i %></li>
+  <% } %>
+</ul>
 
-</body>
-</html>
+<% include ../layout/footer %>
